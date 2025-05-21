@@ -66,18 +66,18 @@ These instructions will get you a copy of the project up and running on your loc
     yarn install
 
 ## Running the Application
-* To start the development server:
-*     npm start
+To start the development server:
+    npm start
 or
-*     yarn start
+    yarn start
 
 * This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
 
 ## Building for Production
 * To create an optimized build of the app for production:
-*     npm run build
+    npm run build
 or
-*     yarn build
+    yarn build
 
 * This will create a build folder in your project directory with the static assets.
 
