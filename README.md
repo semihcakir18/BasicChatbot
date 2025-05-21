@@ -29,30 +29,30 @@ LawBot is a modern, responsive chatbot interface built with React and TypeScript
 *   **Create React App:** Used to bootstrap the project.
 
 ## Project Structure
-my-lawbot-app/
-├── public/
-│ ├── index.html
-│ └── ... (other public assets)
-├── src/
-│ ├── components/
-│ │ ├── ChatWindow.tsx
-│ │ ├── Loader.tsx
-│ │ ├── MessageInput.tsx
-│ │ └── Navbar.tsx
-│ ├── App.tsx
-│ ├── index.tsx
-│ ├── styles.css // Global and component styles
-│ └── ... (other TS files like react-app-env.d.ts)
-├── .gitignore
-├── package.json
-├── README.md // You are here!
-└── tsconfig.json```
+* my-lawbot-app/
+* ├── public/
+* │ ├── index.html
+* │ └── ... (other public assets)
+* ├── src/
+* │ ├── components/
+* │ │ ├── ChatWindow.tsx
+* │ │ ├── Loader.tsx
+* │ │ ├── MessageInput.tsx
+* │ │ └── Navbar.tsx
+* │ ├── App.tsx
+* │ ├── index.tsx
+* │ ├── styles.css // Global and component styles
+* │ └── ... (other TS files like react-app-env.d.ts)
+* ├── .gitignore
+* ├── package.json
+* ├── README.md // You are here!
+* └── tsconfig.json```
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-Prerequisites
-Node.js (v14 or later recommended)
-npm (usually comes with Node.js) or yarn
+## Prerequisites
+* Node.js (v14 or later recommended)
+* **npm** (usually comes with Node.js) or **yarn**
 
 ## Installation
 Clone the repository:
@@ -62,24 +62,24 @@ Clone the repository:
 ## Install dependencies:
     npm install
 
-or if you prefer yarn:
+# or if you prefer yarn:
     yarn install
 
 ## Running the Application
-To start the development server:
-    npm start
-or
-    yarn start
+* To start the development server:
+*     npm start
+* or
+*     yarn start
 
-This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
+* This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
 
 ## Building for Production
-To create an optimized build of the app for production:
-    npm run build
-or
-    yarn build
+* To create an optimized build of the app for production:
+*    npm run build
+* or
+*     yarn build
 
-This will create a build folder in your project directory with the static assets.
+* This will create a build folder in your project directory with the static assets.
 
 ## How It Works
 
