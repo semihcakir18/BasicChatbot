@@ -55,28 +55,28 @@ These instructions will get you a copy of the project up and running on your loc
 * **npm** (usually comes with Node.js) or **yarn**
 
 ## Installation
-Clone the repository:
-    git clone https://github.com/semihcakir18/BasicChatbot.git
-    cd BasicChatbot
+### Clone the repository:
+*     git clone https://github.com/semihcakir18/BasicChatbot.git
+*     cd BasicChatbot
 
 ## Install dependencies:
     npm install
 
-# or if you prefer yarn:
+### or if you prefer yarn:
     yarn install
 
 ## Running the Application
 * To start the development server:
 *     npm start
-* or
+or
 *     yarn start
 
 * This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
 
 ## Building for Production
 * To create an optimized build of the app for production:
-*    npm run build
-* or
+*     npm run build
+or
 *     yarn build
 
 * This will create a build folder in your project directory with the static assets.
