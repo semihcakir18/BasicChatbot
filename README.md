@@ -1,3 +1,4 @@
+This project is made for a Law Chatbot project  but for now its just a basic chatbot UI
 # LawBot - Modern Chatbot Interface
 
 LawBot is a modern, responsive chatbot interface built with React and TypeScript. It features a clean design, auto-scrolling chat window, loading indicators, and customizable styling. This project serves as a frontend template for integrating with any chatbot backend.
@@ -56,39 +57,55 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Installation
 ### Clone the repository:
-*     git clone https://github.com/semihcakir18/BasicChatbot.git
-*     cd BasicChatbot
+
+```bash
+  git clone https://github.com/semihcakir18/BasicChatbot.git
+  cd BasicChatbot
+```
 
 ## Install dependencies:
-    npm install
 
+```bash
+  npm install
+```
 ### or if you prefer yarn:
-    yarn install
+
+```bash
+  yarn install
+```
 
 ## Running the Application
-### To start the development server:
-    npm start
-### or
-    yarn start
 
-* This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
+To start the development server:
+
+```bash
+  npm start
+```
+
+or
+
+```bash
+  yarn start
+```
+
+This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
 
 ## Building for Production
-* To create an optimized build of the app for production:
-*     npm run build
-or
-*     yarn build
+### To create an optimized build of the app for production:
+    npm run build
+### or
+    yarn build
 
-* This will create a build folder in your project directory with the static assets.
+This will create a build folder in your project directory with the static assets.
 
 ## How It Works
 
 * **App.tsx:** The main component that orchestrates the Navbar, ChatWindow, and MessageInput. It manages the state of messages and the loading status.
 * **Navbar.tsx:** Displays the top navigation bar with the "LawBot" title.
 * **ChatWindow.tsx:**
-*    Renders the list of messages.
-*    Uses a useRef and useEffect hook to automatically scroll to the bottom when new messages are added.
-*    Displays the Loader component when isLoading is true.
+    *    Renders the list of messages.
+    *    Uses a useRef and useEffect hook to automatically scroll to the bottom when new messages are added.
+    *    Displays the Loader component when isLoading is true.
 * **MessageInput.tsx:** Provides a form for the user to type and send messages. It calls the onSendMessage prop when a message is submitted.
 * **Loader.tsx:** A simple CSS-based loading spinner component.
 * **styles.css:** Contains all the CSS for the application, including global styles, component-specific styles, and modern scrollbar implementations.
