@@ -30,24 +30,24 @@ LawBot is a modern, responsive chatbot interface built with React and TypeScript
 *   **Create React App:** Used to bootstrap the project.
 
 ## Project Structure
-* my-lawbot-app/
-* ├── public/
-* │ ├── index.html
-* │ └── ... (other public assets)
-* ├── src/
-* │ ├── components/
-* │ │ ├── ChatWindow.tsx
-* │ │ ├── Loader.tsx
-* │ │ ├── MessageInput.tsx
-* │ │ └── Navbar.tsx
-* │ ├── App.tsx
-* │ ├── index.tsx
-* │ ├── styles.css // Global and component styles
-* │ └── ... (other TS files like react-app-env.d.ts)
-* ├── .gitignore
-* ├── package.json
-* ├── README.md // You are here!
-* └── tsconfig.json```
+my-lawbot-app/   
+├── public/        
+│ ├── index.html    
+│ └── ... (other public assets)    
+├── src/    
+│ ├── components/    
+│ │ ├── ChatWindow.tsx    
+│ │ ├── Loader.tsx   
+│ │ ├── MessageInput.tsx   
+│ │ └── Navbar.tsx    
+│ ├── App.tsx   
+│ ├── index.tsx   
+│ ├── styles.css // Global and component styles    
+│ └── ... (other TS files like react-app-env.d.ts)   
+├── .gitignore    
+├── package.json    
+├── README.md // You are here!    
+└── tsconfig.json```    
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
