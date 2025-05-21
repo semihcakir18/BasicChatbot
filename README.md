@@ -66,18 +66,18 @@ These instructions will get you a copy of the project up and running on your loc
     yarn install
 
 ## Running the Application
-To start the development server:
+### To start the development server:
     npm start
-or
+### or
     yarn start
 
 * This will open the application in your default web browser, usually at http://localhost:3000. The page will reload if you make edits.
 
 ## Building for Production
 * To create an optimized build of the app for production:
-    npm run build
+*     npm run build
 or
-    yarn build
+*     yarn build
 
 * This will create a build folder in your project directory with the static assets.
 
@@ -95,10 +95,10 @@ or
 The AI responses are currently simulated using setTimeout in App.tsx. To connect to a real backend, you would replace this simulation with an API call (e.g., using fetch or axios) in the handleSendMessage function.
 
 ## Customization
-* **Logo: Change "LawBot" in src/components/Navbar.tsx to your desired logo text or an <img> tag.**
-* **Styling: Modify src/styles.css to change colors, fonts, and layout. The CSS is organized by component for easier navigation.**
-* **AI Integration: Update the handleSendMessage function in src/App.tsx to make requests to your chatbot backend API.**
-* **Initial Message: Change the initial AI message in the useEffect hook within App.tsx.**
+* **Logo:** Change "LawBot" in src/components/Navbar.tsx to your desired logo text or an <img> tag.
+* **Styling:** Modify src/styles.css to change colors, fonts, and layout. The CSS is organized by component for easier navigation.
+* **AI Integration:** Update the handleSendMessage function in src/App.tsx to make requests to your chatbot backend API.
+* **Initial Message:** Change the initial AI message in the useEffect hook within App.tsx.
 
 ## Future Enhancements (Suggestions)
 * **Implement actual API calls to a chatbot backend.**
