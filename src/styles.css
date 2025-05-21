@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* A very light grey for the background */
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff; /* White navbar */
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue-grey text for logo */
+}
+
+/* ChatWindow styles */
+.chat-window {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Enables scrolling */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between messages */
+  background-color: #f4f7f6; /* Light grey chat background */
+}
+
+/* Modern Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.chat-window::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+  background: #f4f7f6; /* Background of the scrollbar track */
+  border-radius: 10px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: #bdc3c7; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 2px solid #f4f7f6; /* Creates padding around thumb */
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+  background-color: #95a5a6; /* Darker thumb on hover */
+}
+
+/* Modern Scrollbar for Firefox */
+.chat-window {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #bdc3c7 #f4f7f6; /* thumb and track color */
+}
+
+
+.message {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.message.user {
+  background-color: #3498db; /* A calm blue for user messages */
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px; /* Slightly different shape for user */
+}
+
+.message.ai {
+  background-color: #ecf0f1; /* Light silver for AI messages */
+  color: #2c3e50; /* Dark text for AI messages */
+  align-self: flex-start;
+  border-bottom-left-radius: 4px; /* Slightly different shape for AI */
+}
+
+.message-timestamp {
+  font-size: 0.75em;
+  color: #7f8c8d;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.message.ai .message-timestamp {
+  color: #95a5a6;
+}
+
+
+/* MessageInput styles */
+.message-input-area {
+  display: flex;
+  padding: 15px 20px;
+  background-color: #ffffff; /* White input area */
+  border-top: 1px solid #ecf0f1; /* Light border */
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 1px solid #bdc3c7; /* Light grey border */
+  border-radius: 20px; /* Rounded input field */
+  margin-right: 10px;
+  font-size: 1em;
+  outline: none;
+}
+
+.message-input:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.send-button {
+  padding: 12px 20px;
+  background-color: #3498db; /* Blue send button */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.send-button:disabled {
+  background-color: #a5c9e3;
+  cursor: not-allowed;
+}
+
+
+/* Loader styles */
+.loader-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 8px;
+}
+
+.loader {
+  border: 3px solid #ecf0f1; /* Light grey border */
+  border-top: 3px solid #3498db; /* Blue spinner part */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-text {
+  font-size: 0.9em;
+  color: #7f8c8d; /* Grey text for loader */
+}
